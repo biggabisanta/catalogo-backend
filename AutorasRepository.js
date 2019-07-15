@@ -1,8 +1,8 @@
 require('dotenv-safe').load()
 
 const mongoose = require("mongoose");
-//const MONGO_URL = process.env.MONGODB_URI;
-const MONGO_URL = "mongodb://localhost:27017/catalogo";
+const MONGO_URL = process.env.MONGODB_URI;
+//const MONGO_URL = "mongodb://localhost:27017/catalogo";
 
 function connect () {
   mongoose.connect(MONGO_URL,
